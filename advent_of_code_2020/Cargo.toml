@@ -1,0 +1,22 @@
+[package]
+name = "advent2020"
+version = "1.0.0"
+authors = ["Deep Mehta <itsdeveloperdeep@gmail.com>"]
+edition = "2020"
+
+[profile.dev]
+opt-level = 3      # controls the `--opt-level` the compiler builds with.
+                   # 0-1 is good for debugging. 2 is well-optimized. Max is 3.
+                   # 's' attempts to reduce size, 'z' reduces size even more.
+[profile.release]
+opt-level = 3
+
+[dependencies]
+itertools = "0.9.0"
+regex = "1"
+lazy_static = "1.4.0"
+num = "0.3.1"
+rand = "0.7.2"
+pathfinding = "2.1.1"
+dynparser = "0.4.2"
+indicatif = "0.15.0"
